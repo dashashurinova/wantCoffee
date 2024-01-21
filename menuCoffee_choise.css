@@ -1,0 +1,106 @@
+.choise {
+    margin: 20px 40px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.choise__title {
+    width: 800px;
+    margin-bottom: 40px;
+    color:  #403F3D;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 125%; /* 75px */
+}
+.choise__title-highlight {
+    color: #B0907A;
+    font-family: 'Inter';
+    font-size: 60px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 125%;
+}
+.choise__section {
+    display: flex;
+    gap: 16px;
+}
+.choise__section_item {
+    display: flex;
+    padding: 8px 16px 8px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 100px;
+    border: 1px solid  #C1B6AD;
+    cursor: pointer;
+}
+
+.choise__section_item:hover{
+    background-color: #665F55;
+    transition: 0.5s;
+}
+
+.choise__section_item-active{
+    background-color: #665F55;
+    transition: 0.5s;
+}
+
+.choise__section_item-circle {
+    display: flex;
+    padding: 3px 7px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background: #C1B6AD;
+    flex-shrink: 0;
+}
+.choise__section_item-circle-active{
+    background-color: #E1D4C9;
+}
+.choise__section_item-img {
+    width: 16px;
+    height: 24px;
+}
+.choise__section_item-text {
+    color:  #403F3D;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%; /* 24px */
+    
+}
+
+.choise__section_item-text-hover {
+    color: #E1D4C9;
+}
+.choise__section_item-text-active{
+    color: #E1D4C9;
+}
+
+@media (min-width:350px) and (max-width:880px) {
+    .choise__title {
+        width: 688px;
+    }
+}
+
+@media (min-width:300px) and (max-width:700px) {
+    .choise {
+        margin: 0px 16px 40px 16px;
+    }
+    .choise__title {
+        width: 345px;
+        font-size: 32px;
+        text-align: center;
+    }
+    .choise__title-highlight {
+        font-size: 32px;
+    }
+    .choise__section {
+        gap: 8px;
+        margin: 0 16px;
+    }
+    
+
+}

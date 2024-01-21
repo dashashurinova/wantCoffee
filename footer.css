@@ -1,0 +1,181 @@
+.footer {
+    margin: 0 40px;
+    padding-bottom: 40px;
+}
+.footer__container {
+    display: flex;
+    max-width: 1360px;
+    padding: 100px;
+    justify-content: left;
+    align-items: center;
+    gap: 100px;
+    align-self: stretch;
+    border-radius: 40px;
+    background: #665F55;
+}
+.footer__container_first {
+}
+.footer__container_first-title {
+    color: #E1D4C9;
+    font-family: 'Inter';
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 125%; /* 75px */
+    width: 530px;
+    margin-bottom: 40px;
+}
+.footer__container_first-title-italic {
+    color: #B0907A;
+    font-family: 'Inter';
+    font-size: 60px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 125%;
+}
+.footer__container_first-favs {
+    display: flex;
+}
+.footer__container_first-favs-circle {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    border: 1px solid  #C1B6AD;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+.footer__container_first-favs-circle:hover {
+    background-color: #E1D4C9;
+    transition: 0.5s;
+}
+.footer__container_second {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    width: 530px;
+    padding-bottom: 2px;
+}
+.footer__container_second-title {
+    color: #E1D4C9;
+    font-family: 'Inter';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; /* 30px */
+    margin-bottom: 20px;
+}
+.footer__container_second-content {
+    display: flex;
+    justify-content: center;
+}
+.footer__container_second-content-line{
+    width: 182px;
+    height: 2px;
+    background-color: #E1D4C9;
+    transition: 0.5s;
+    opacity: 0;
+}
+.line_visibility{
+    opacity: 1;
+    transition: 0.5s;
+}
+.footer__container_second-fav {
+    margin-right: 8px;
+    margin-top: 18px;
+}
+.footer__container_second-text {
+    color:  #E1D4C9;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%; /* 24px */
+    margin-top: 18px;
+}
+
+@media (min-width:350px) and (max-width:1240px) {
+    .footer__container {
+        flex-wrap: wrap;
+        padding: 100px 60px 100px 60px;
+    }
+    .footer__container_first-title {
+        width: 568px;
+    }
+    .footer__container_second {
+        width: 568px;
+    }
+    .footer__container_second-title {
+        color: #E1D4C9;
+        font-family: 'Inter';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 125%; /* 30px */
+        margin-bottom: 22px;
+        width: 568px;
+     }
+}
+
+@media (min-width:350px) and (max-width:720px) {
+    .footer {
+        margin: 0 16px;
+    }
+    .footer__container {
+        max-width: 780px;
+        padding: 60px 16px;
+        gap: 40px;
+    }
+    .footer__container_first {
+        width: 316px;
+    }
+    .footer__container_first-title {
+        font-size: 32px;
+        max-width: 316px;
+        width: fit-content;
+        height: 80px;
+    }
+    .footer__container_first-title-italic {
+        font-size: 32px;
+        max-width: 316px;
+    }
+    .footer__container_second {
+        width: 316px;
+        padding-bottom: 2px;
+    }
+    .footer__container_second-title {
+        
+        font-size: 24px;
+        line-height: 125%; /* 30px */
+        margin-bottom: 20px;
+        max-width:316px ;
+    }
+    .footer__container_second-content {
+        display: flex;
+        justify-content: center;
+    }
+    .footer__container_second-content-line{
+        width: 182px;
+        height: 2px;
+        background-color: #E1D4C9;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    .line_visibility{
+        opacity: 1;
+        transition: 0.5s;
+    }
+    .footer__container_second-fav {
+        margin-right: 8px;
+        margin-top: 18px;
+    }
+    .footer__container_second-text {
+        color:  #E1D4C9;
+        font-family: 'Inter';
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 150%; /* 24px */
+        margin-top: 18px;
+    }
+}

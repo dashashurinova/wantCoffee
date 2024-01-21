@@ -1,0 +1,114 @@
+.motivation {
+    /* margin: 100px 40px; */
+}
+.motivation__title {
+    color: #403F3D;
+    font-family: Inter;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 75px; /* 75px */
+    margin: 100px 40px 40px 40px;
+}
+.motivation__title_highlight{
+    color:  #B0907A;
+    font-family: Inter;
+    font-size: 60px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 125%;
+}
+
+.motivation__container {
+    margin-top: 40px;
+    display: grid;
+    grid-template-rows: 430px 120px 430px;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 100px;
+    max-width: 1360px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.pic__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+}
+.pic__box:nth-child(1) {
+    grid-row: 1/3;
+}
+.pic__box:nth-child(2) {
+    grid-row: 3/4;
+}
+.pic__box:nth-child(3) {
+    grid-row: 1/2;
+}
+.pic__box:nth-child(4) {
+    grid-row: 2/4;
+}
+
+.pic__box {
+    overflow: hidden; 
+}
+.pic__box img {
+    transition: 0.5s; 
+    display: block; 
+}
+.pic__box img:hover {
+    transform: scale(0.965); 
+}
+
+/***************** adaptive************************************************** */
+/************ tabletka */
+@media (min-width:350px) and (max-width:1000px) {
+    .motivation__container {
+        grid-template-rows: 590px 590px;
+        grid-template-columns: 1fr;
+        max-width: 688px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .pic__box:nth-child(2) {
+        display: none;
+    }
+    .pic__box:nth-child(3) {
+        display: none;
+    }
+    .pic__box:nth-child(1) {
+        grid-row: 1/2;
+    }
+    .pic__box:nth-child(4) {
+        grid-row: 2/3;
+    }
+}
+/************ mobilka */
+@media (min-width:350px) and (max-width:760px) {
+    .motivation__title {
+        font-size: 32px;
+        line-height: 125%; /* 40px */
+        margin: 0px 16px 40px 16px;
+    }
+    .motivation__title_highlight{
+        font-size: 32px;
+        line-height: 125%; /* 40px */
+    }
+    .motivation__container {
+        max-width: 348px;
+        margin: 0 auto 100px auto;
+    }
+    .pic__box {
+        width: 348px;
+    }
+    .pic__box:nth-child(1) {
+        grid-row: 1/2;
+        overflow: hidden;
+    }
+    .pic__box:nth-child(4) {
+        grid-row: 2/3;
+        overflow: hidden;
+    }
+    }

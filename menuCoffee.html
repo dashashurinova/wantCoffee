@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./menuCoffee.css">
+    <link rel="stylesheet" href="./menuCoffee_choise.css">
+    <link rel="stylesheet" href="./menuCoffee_choise_menu.css">
+    <link rel="stylesheet" href="./modal.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Agdasima&family=Anton&family=Dancing+Script&family=Forum&family=IM+Fell+DW+Pica&family=Inter&family=Mate+SC&family=Meddon&family=Monoton&family=Montaga&family=PT+Sans&display=swap"
+        rel="stylesheet">
+    <link type="image/x-icon" href="./img/favicon.ico" rel="shortcut icon">
+    <title>CHMenuCoffee</title>
+</head>
+
+<body class="body">
+    <header class="header header__burger">
+        <div class="header__label"><a href="./index.html">
+                <div class="header__label_cirkle"> </div>
+                <img src="./img/Resource.svg" class="header__label_title" alt="circle">
+                <img src="./img/CoffeeHouse.svg" class="header__label_text" alt="">
+            </a> </div>
+
+        <nav class="header__nav header__nav_burger">
+            <div>
+                <a href="./index.html#fav" class="header__nav_item header__nav_item-burger">Favorite coffee</a>
+                <div class="header__menu_line header__menu_line_fav_coffee header__menu_line_fav_coffee-burger"></div>
+            </div>
+            <div>
+                <a href="./index.html#motivation" class="header__nav_item header__nav_item-burger">About</a>
+                <div class="header__menu_line header__menu_line_about"></div>
+            </div>
+            <div>
+                <a href="./index.html#app" class="header__nav_item header__nav_item-burger">Mobile app</a>
+                <div class="header__menu_line header__menu_line_mobapp"></div>
+            </div>
+            <div>
+                <a href="./index.html#footer" class="header__nav_item header__nav_item-burger">Contact us</a>
+                <div class="header__menu_line header__menu_line_contact header__menu_line_contact-burger"></div>
+            </div>
+        </nav>
+        <div>
+            <div class="header__menu header__menu_burger ">
+                <div class="header__menu_text header__menu_text-burger">Menu</div>
+                <img src="./img/coffee-cup.svg" class="header__menu_cup header__menu_cup-burger" alt="coffeeCup">
+            </div>
+            <div class="header__menu_line header__menu_line_menu header__menu_line_menu-burger"></div>
+        </div>
+
+
+        <button class="burger__button burger__button-open">
+            <div class="burger__cirkle">
+                <div class="burger__line"></div>
+                <div class="burger__line"></div>
+            </div>
+        </button>
+
+    </header>
+
+    <section class="choise">
+        <h2 class="choise__title">Behind each of our cups hides an <span class="choise__title-highlight"> amazing
+                surprise</span></h2>
+        <div class="choise__section">
+            <div class="choise__section_item choise__section_item-active">
+                <div class="choise__section_item-circle choise__section_item-circle-active"><img
+                        class="choise__section_item-img" src="./img/coffeeMenu/cup.svg" alt="cup"></div>
+                <p class="choise__section_item-text choise__section_item-text-active">Coffee</p>
+            </div>
+            <div class="choise__section_item">
+                <div class="choise__section_item-circle"><img class="choise__section_item-img"
+                        src="./img/coffeeMenu/teapot.svg" alt="cup"></div>
+                <p class="choise__section_item-text">Tea</p>
+            </div>
+            <div class="choise__section_item">
+                <div class="choise__section_item-circle "><img class="choise__section_item-img"
+                        src="./img/coffeeMenu/dessert.svg" alt="cup"></div>
+                <p class="choise__section_item-text">Dessert</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu">
+        <div class="menu__item coffee">
+            <div class="menu__item_img-box">
+                <img class="menu__item_img" src="./img/coffeeMenu/coffee-1.jpg" alt="coffee1">
+            </div>
+            <h3 class="menu__item_title">Irish coffee</h3>
+            <div class="menu__item_text">Fragrant black coffee with Jameson Irish whiskey and whipped milk</div>
+            <p class="menu__item_price">$7.00</p>
+        </div>
+        <div class="menu__item coffee">
+            <div class="menu__item_img-box">
+                <img class="menu__item_img" src="./img/coffeeMenu/coffee-2.jpg" alt="coffee1">
+            </div>
+            <h3 class="menu__item_title">Kahlua coffee</h3>
+            <div class="menu__item_text">Classic coffee with milk and Kahlua liqueur under a cap of frothed milk</div>
+            <p class="menu__item_price">$7.00</p>
+        </div>
+        <div class="menu__item coffee">
+            <div class="menu__item_img-box">
+                <img class="menu__item_img" src="./img/coffeeMenu/coffee-3.jpg" alt="coffee1">
+            </div>
+            <h3 class="menu__item_title">Honey raf</h3>
+            <div class="menu__item_text">Espresso with frothed milk, cream and aromatic honey</div>
+            <p class="menu__item_price">$5.50</p>
+        </div>
+        <div class="menu__item coffee ">
+            <div class="menu__item_img-box">
+                <img class="menu__item_img" src="./img/coffeeMenu/coffee-4.jpg" alt="coffee1">
+            </div>
+            <h3 class="menu__item_title">Ice cappuccino</h3>
+            <div class="menu__item_text">Cappuccino with soft thick foam in summer version with ice</div>
+            <p class="menu__item_price">$5.00</p>
+        </div>
+        <div class="menu__item coffee sec_page">
+            <div class="menu__item_img-box">
+                <img class="menu__item_img" src="./img/coffeeMenu/coffee-5.jpg" alt="coffee1">
+            </div>
+            <h3 class="menu__item_title">Espresso</h3>
+            <div class="menu__item_text">Fragrant black coffee with Jameson Irish whiskey and whipped milk</div>
+            <p class="menu__item_price">$7.00</p>
+        </div>
+        <div class="menu__item coffee sec_page">
+            <div class="menu__item_img-box">
+                <img class="menu__item_img" src="./img/coffeeMenu/coffee-6.jpg" alt="coffee1">
+            </div>
+            <h3 class="menu__item_title">Latte</h3>
+            <div class="menu__item_text">Espresso coffee with the addition of steamed milk and dense milk foam</div>
+            <p class="menu__item_price">$5.50</p>
+        </div>
+        <div class="menu__item coffee sec_page">
+            <div class="menu__item_img-box">
+                <img class="menu__item_img" src="./img/coffeeMenu/coffee-7.jpg" alt="coffee1">
+            </div>
+            <h3 class="menu__item_title">Latte macchiato</h3>
+            <div class="menu__item_text">Espresso with frothed milk and chocolate</div>
+            <p class="menu__item_price">$5.50</p>
+        </div>
+        <div class="menu__item coffee sec_page">
+            <div class="menu__item_img-box">
+                <img class="menu__item_img" src="./img/coffeeMenu/coffee-8.jpg" alt="coffee1">
+            </div>
+            <h3 class="menu__item_title">Coffee with cognac</h3>
+            <div class="menu__item_text">Fragrant black coffee with cognac and whipped cream</div>
+            <p class="menu__item_price">$6.50</p>
+        </div>
+
+        <!-- tea section -->
+        <div class="menu__item tea menu__item_inv">
+            <div class="menu__item_img-box">
+                <img class="menu__item_img" src="./img/coffeeMenu/tea-1.jpg" alt="tea1">
+            </div>
+            <h3 class="menu__item_title">Moroccan</h3>
+            <div class="menu__item_text">Fragrant black tea with the addition of tangerine, cinnamon, honey, lemon and
+                mint</div>
+            <p class="menu__item_price">$4.50</p>
+        </div>
+        <div class="menu__item tea menu__item_inv">
+            <div class="menu__item_img-box">
+                <img class="menu__item_img" src="./img/coffeeMenu/tea-2.jpg" alt="tea2">
+            </div>
+            <h3 class="menu__item_title">Ginger</h3>
+            <div class="menu__item_text">Original black tea with fresh ginger, lemon and honey</div>
+            <p class="menu__item_price">$5.00</p>
+        </div>
+        <div class="menu__item tea menu__item_inv">
+            <div class="menu__item_img-box">
+                <img class="menu__item_img" src="./img/coffeeMenu/tea-3.jpg" alt="tea3">
+            </div>
+            <h3 class="menu__item_title">Cranberry</h3>
+            <div class="menu__item_text">Invigorating black tea with cranberry and honey</div>
+            <p class="menu__item_price">$5.00</p>
+        </div>
+        <div class="menu__item tea menu__item_inv">
+            <div class="menu__item_img-box">
+                <img class="menu__item_img" src="./img/coffeeMenu/tea-4.jpg" alt="tea4">
+            </div>
+            <h3 class="menu__item_title">Sea buckthorn</h3>
+            <div class="menu__item_text">Toning sweet black tea with sea buckthorn, fresh thyme and cinnamon</div>
+            <p class="menu__item_price">$5.50</p>
+        </div>
+
+
+        <!-- dessert section -->
+        <div class="menu__item dessert menu__item_inv">
+            <div class="menu__item_img-box">
+                <img class="menu__item_img" src="./img/coffeeMenu/dessert-1.jpg" alt="dessert1">
+            </div>
+            <h3 class="menu__item_title">Marble cheesecake</h3>
+            <div class="menu__item_text">Philadelphia cheese with lemon zest on a light sponge cake and red currant jam
+            </div>
+            <p class="menu__item_price">$3.50</p>
+        </div>
+        <div class="menu__item dessert menu__item_inv">
+            <div class="menu__item_img-box">
+                <img class="menu__item_img" src="./img/coffeeMenu/dessert-2.jpg" alt="dessert2">
+            </div>
+            <h3 class="menu__item_title">Red velvet</h3>
+            <div class="menu__item_text">Layer cake with cream cheese frosting</div>
+            <p class="menu__item_price">$4.50</p>
+        </div>
+        <div class="menu__item dessert menu__item_inv">
+            <div class="menu__item_img-box">
+                <img class="menu__item_img" src="./img/coffeeMenu/dessert-3.jpg" alt="dessert3">
+            </div>
+            <h3 class="menu__item_title">Cheesecakes</h3>
+            <div class="menu__item_text">Soft cottage cheese pancakes with sour cream and fresh berries and sprinkled
+                with powdered sugar</div>
+            <p class="menu__item_price">$4.50</p>
+        </div>
+        <div class="menu__item dessert menu__item_inv">
+            <div class="menu__item_img-box">
+                <img class="menu__item_img" src="./img/coffeeMenu/dessert-4.jpg" alt="dessert4">
+            </div>
+            <h3 class="menu__item_title">Creme brulee</h3>
+            <div class="menu__item_text">Delicate creamy dessert in a caramel basket with wild berries</div>
+            <p class="menu__item_price">$4.00</p>
+        </div>
+        <div class="menu__item dessert menu__item_inv sec_page">
+            <div class="menu__item_img-box">
+                <img class="menu__item_img" src="./img/coffeeMenu/dessert-5.jpg" alt="dessert5">
+            </div>
+            <h3 class="menu__item_title">Pancakes</h3>
+            <div class="menu__item_text">Tender pancakes with strawberry jam and fresh strawberries</div>
+            <p class="menu__item_price">$4.50</p>
+        </div>
+        <div class="menu__item dessert menu__item_inv sec_page">
+            <div class="menu__item_img-box">
+                <img class="menu__item_img" src="./img/coffeeMenu/dessert-6.jpg" alt="dessert7">
+            </div>
+            <h3 class="menu__item_title">Honey cake</h3>
+            <div class="menu__item_text">Classic honey cake with delicate custard</div>
+            <p class="menu__item_price">$4.50</p>
+        </div>
+        <div class="menu__item dessert menu__item_inv sec_page">
+            <div class="menu__item_img-box">
+                <img class="menu__item_img" src="./img/coffeeMenu/dessert-7.jpg" alt="dessert7">
+            </div>
+            <h3 class="menu__item_title">Chocolate cake</h3>
+            <div class="menu__item_text">Cake with hot chocolate filling and nuts with dried apricots</div>
+            <p class="menu__item_price">$5.50</p>
+        </div>
+        <div class="menu__item dessert menu__item_inv sec_page">
+            <div class="menu__item_img-box">
+                <img class="menu__item_img" src="./img/coffeeMenu/dessert-8.jpg" alt="dessert8">
+            </div>
+            <h3 class="menu__item_title">Black forest</h3>
+            <div class="menu__item_text">A combination of thin sponge cake with cherry jam and light chocolate mousse
+            </div>
+            <p class="menu__item_price">$6.50</p>
+        </div>
+
+    </section>
+
+    <button class="loadButton">
+        <img src="./img/tablet/load.svg" alt="load">
+    </button>
+    
+    <!-- фильтр затемнения осномного окна при открытии модального -->
+    <div class="fon-filter "></div>
+    <section class="modal">
+        
+        <div class="modal__item_img-box">
+            <img class="modal__item_img" src="./img/coffeeMenu/coffee-1.jpg" alt="choise">
+        </div>
+    
+        <div class="modal__description">
+            <div class="modal__description_title">Title</div>
+            <div class="modal__description_text">description text</div>
+            <div class="modal__size_title">Size</div>
+            <div class="choise__size_section">
+                <button class="choise__size_item chosen_item">
+                    <div class="choise__size_letter chosen_item_label">S</div>
+                    <p class="choise__size_weight chosen_item_content">pum</p>
+                </button>
+                <button class="choise__size_item">
+                    <div class="choise__size_letter">M</div>
+                    <p class="choise__size_weight">pum</p>
+                </button>
+                <button class="choise__size_item">
+                    <div class="choise__size_letter">L</div>
+                    <p class="choise__size_weight">pum</p>
+                </button>
+            </div>
+            <div class="modal__additives_title">Additives</div>
+            <div class="choise__additives_section">
+                <button class="choise__additives_item">
+                    <div class="choise__additives_number">1</div>
+                    <p class="choise__additives_name">pum</p>
+                </button>
+                <button class="choise__additives_item">
+                    <div class="choise__additives_number">2</div>
+                    <p class="choise__additives_name">pum</p>
+                </button>
+                <button class="choise__additives_item">
+                    <div class="choise__additives_number">3</div>
+                    <p class="choise__additives_name">pum</p>
+                </button>
+            </div>
+            <div class="modal__price">
+                <div class="modal__price_title">Total:</div>
+                <div class="modal__price_value">tam</div>
+            </div>
+            <div class="modal__line"></div>
+            <div class="modal__info">
+                <img class="modal__info_img" src="./img/info-empty.svg" alt="info">
+                <div class="modal__info_text">The cost is not final. Download our mobile app to see the final price and
+                    place your order. Earn loyalty points and enjoy your favorite coffee with up to 20% discount.</div>
+            </div>
+            <button class="modal__button">Close</button>
+        </div>
+        
+    </section>
+
+    <section class="footer" id="footer">
+        <div class="footer__container">
+            <div class="footer__container_first">
+                <h2 class="footer__container_first-title">Sip, Savor, Smile. <span
+                        class="footer__container_first-title-italic">It’s coffee time!</span></h2>
+                <div class="footer__container_first-favs">
+                    <div class="footer__container_first-favs-circle"><img id="twitCont" src="./img/twitter.svg"
+                            alt="twit"></div>
+                    <div class="footer__container_first-favs-circle"><img id="instCont" src="./img/instagram.svg"
+                            alt="inst"></div>
+                    <div class="footer__container_first-favs-circle"><img id="fbCont" src="./img/facebook.svg" alt="fb">
+                    </div>
+                </div>
+            </div>
+            <div class="footer__container_second">
+                <p class="footer__container_second-title">Contact us</p>
+
+                <div class="footer__container_second-content">
+                    <a href="https://www.google.com/maps/d/viewer?mid=1lneb9Ksi2zIRjE4exKvVsOFmqKo&hl=en&ll=33.80801827822091%2C-117.91909199999998&z=15"
+                        target="_blank">
+                        <img class="footer__container_second-fav" src="./img/pin-alt.svg" alt="map"></a>
+                    <a href="https://www.google.com/maps/d/viewer?mid=1lneb9Ksi2zIRjE4exKvVsOFmqKo&hl=en&ll=33.80801827822091%2C-117.91909199999998&z=15"
+                        target="_blank" class="footer__container_second-text">8558 Green Rd., LA</a>
+                </div>
+                <div class="footer__container_second-content-line"></div>
+
+                <div class="footer__container_second-content">
+                    <a href="tel:+79001111111"><img class="footer__container_second-fav" src="./img/phone.svg"
+                            alt="phone"></a>
+                    <a href="tel:+79001111111" class="footer__container_second-text">+1 (603) 555-0123</a>
+                </div>
+                <div class="footer__container_second-content-line"></div>
+
+                <div class="footer__container_second-content">
+                    <img class="footer__container_second-fav" src="./img/clock.svg" alt="">
+                    <p class="footer__container_second-text">Mon-Sat: 9:00 AM – 23:00 PM</p>
+                </div>
+                <div class="footer__container_second-content-line"></div>
+
+
+            </div>
+        </div>
+    </section>
+    <script src="./js/choiseButtons.js"></script>
+    <script src="./js/changeImgFooter.js"></script>
+    <script src="./js/menuLine.js"></script>
+    <script src="./js/footerLinksLines.js"></script>
+    <script src="./js/burger.js"></script>
+    <script type="module" src="./js/modal.js"></script>
+    <script type="module" src="./js/JSON.js"></script>
+</body>
+
+</html>

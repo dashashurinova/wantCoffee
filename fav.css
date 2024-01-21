@@ -1,0 +1,175 @@
+.fav {
+    margin: 100px 40px;
+}
+.fav__title {
+    color: #403F3D;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 125%; /* 75px */
+    margin-bottom: 40px;
+}
+.fav__title-fav{
+    color: #B0907A;
+    font-family: 'Inter';
+    font-size: 60px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 125%;
+}
+.fav__content {
+    display: flex;
+}
+.slider__window {
+    display: flex;
+    width: 480px;
+    height: 680px;
+    overflow: hidden;
+}
+.slider{
+    width: calc(480px*3);
+    display: flex;
+    transform: none;
+    transition: 1s;
+}
+.slider__item{
+    /* display: block; */
+}
+.fav__content_button-left {
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    border: 1px solid  #665F55;
+    background: #E1D4C9;
+    margin-left: 4px;
+    margin-right: 40px;
+    margin-top: 290px;
+    flex-shrink: 0;
+}
+.fav__content_beverage {
+    max-width: 1152px;
+    margin: 0 auto;
+    user-select: none;
+}
+.fav__content_beverage-foto {
+    width: 480px;
+    height: 480px;
+    background: #E1D4C9;
+    transition: 0.5s;
+    pointer-events: none;
+}
+.fav__content_beverage-title {
+    color: #403F3D;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 125%; /* 30px */
+    margin-top: 20px;
+    margin-bottom: 16px;
+}
+.fav__content_beverage-text {
+    color: #403F3D;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    max-width: 480px;
+}
+.fav__content_beverage-price {
+    margin-top: 16px;
+    margin-bottom: 40px;
+    color: var(--text-dark, #403F3D);
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; /* 30px */
+}
+.fav__content_beverage-pag {
+    display: flex;
+    gap:12px;
+    justify-content: center;
+}
+.fav__content_beverage-pag-item {
+    width: 40px;
+    height: 4px;
+    border-radius: 100px;
+    background:#C1B6AD ;
+    transition: width 1s cubic-bezier(0, 0, 1, 1) 500ms;
+}
+.fav__content_beverage-pag-item-active {
+    width: 0px;
+    height: 4px;
+    border-radius: 100px;
+    background:#665F55 ;
+    transition: width, linear, 500ms;
+}
+.pag__active {
+    animation-duration: 4s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    0% {width: 0;}
+    90% {width: 40px;}
+    100% {width: 0;}
+}
+
+.pag__active:hover {
+    animation-play-state: paused;
+}
+
+.fav__content_beverage-pag-item-active{
+    background: #665F55;
+}
+.fav__content_button-right {
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    border: 1px solid  #665F55;
+    background: #E1D4C9;
+    margin-right: 4px;
+    margin-left: 40px;
+    margin-top: 290px;
+    flex-shrink: 0;
+}
+.fav__content_button-right:hover, .fav__content_button-left:hover{
+    background: #665F55;
+    transition: 0.5s;
+}
+
+@media (min-width:350px) and (max-width:760px) {
+    .fav {
+        margin: 100px auto;
+        max-width: 348px;
+        overflow: hidden;
+    }
+    .fav__content_button-left, .fav__content_button-right{
+        display: none;
+    }
+    .fav__title {
+        font-size: 32px;
+    }
+    .fav__title-fav{
+        font-size: 32px;
+    }
+    .fav__content_beverage-foto {
+        width: 348px;
+        height: 348px;
+    }
+    .fav__content_beverage-text {
+        max-width: 340px;
+    }
+    .slider__window {
+        width: 348px;
+        height: auto;
+    }
+}
