@@ -45,6 +45,7 @@
     border: 1px solid  #C1B6AD;
     margin-right: 12px;
     flex-shrink: 0;
+    transition: 0.5s;
 }
 .footer__container_first-favs-circle:hover {
     background-color: #E1D4C9;
@@ -115,7 +116,7 @@
         line-height: 125%; /* 30px */
         margin-bottom: 22px;
         width: 568px;
-     }
+    }
 }
 
 @media (min-width:350px) and (max-width:720px) {

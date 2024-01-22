@@ -8,10 +8,15 @@ let finalPrice=0
 let addToPriseAdditive=0
 let addToPriseAmmount=0
 
-// слушаем на какую карточку нажмут
+// слушаем на какую карточку нажмут мышью или пальцем
 productCards.forEach((unit,item)=>{
-    unit.addEventListener('click', function () {
-        // открываем модальное окно, блокируем скролл, затемняем окно
+    unit.addEventListener('click', function(){openModal(unit,item)})
+    unit.addEventListener('touch', function(){openModal(unit,item)})
+})
+
+// функция открытия модального окна
+function openModal (unit,item) {
+    // открываем модальное окно, блокируем скролл, затемняем окно
         document.querySelector('.modal').style = 'display: flex;'
         document.querySelector('.body').style = 'overflow: hidden;'
         document.querySelector('.fon-filter').classList.toggle('work-filter')
@@ -38,8 +43,7 @@ productCards.forEach((unit,item)=>{
         purePrice = Number(products[item].price)
         document.getElementsByClassName('modal__price_value')[0].textContent = "$"+purePrice.toFixed(2);
         finalPrice = purePrice
-    })
-})
+}
 
 // выбираем обьём/вес/добавки
 choiseSizeItem.forEach((unit,item)=>{
