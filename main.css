@@ -60,7 +60,6 @@ line-height: 150%;
     width: 72px;
 }
 .header__menu_line{
-    /* width: 72px; */
     height: 2px;
     background: #403F3D;
     opacity: 0;

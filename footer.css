@@ -50,6 +50,10 @@
 .footer__container_first-favs-circle:hover {
     background-color: #E1D4C9;
     transition: 0.5s;
+    .social{
+    stroke:#665F55;
+    transition: 0.5s;
+    }   
 }
 .footer__container_second {
     display: flex;

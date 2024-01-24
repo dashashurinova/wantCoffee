@@ -50,19 +50,17 @@
 .app__content_button:hover {
     background-color: #665F55;
     transition: 0.5s;
+    .app__svg{
+        fill: #E1D4C9;
+        transition: 0.5s;
+    }
 }
 .app__content_button:hover .app__content_button-line1  {
     color: #E1D4C9;
     transition: 0.5s;
 }
-
 .app__content_button:hover .app__content_button-line2  {
     color: #E1D4C9;
-    transition: 0.5s;}
-
-.app__content_button-img {
-    width: 36px;
-    height: 36px;
     transition: 0.5s;
 }
 .app__content_button-line1 {

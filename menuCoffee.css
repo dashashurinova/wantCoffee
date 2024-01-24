@@ -5,33 +5,33 @@ html {
 .body{
     background-color:#E1D4C9;
     max-width: 1440px;
+    width: 100%;
     margin: 0 auto;
     }
-    
-    .header {
-        margin: 20px 40px;
-        display: flex;
-    }
-    .header__label {
-        width: 100px;
-        height: 60px;
-    }
-    .header__label_cirkle {
-        margin-top: 6px;
-        margin-left: 31px;
-        width: 38px;
-        height: 38px;
-        border-radius: 20px;
-        background-color: #B0907A;
-        position: absolute;
-    }
-    .header__label_title {
-        width: 92.514px;
-        height: 22.342px;
-        position: relative;
-        margin-top: 13px;
-        margin-left: 4.25px;
-    }
+.header {
+    margin: 20px 40px;
+    display: flex;
+}
+.header__label {
+    width: 100px;
+    height: 60px;
+}
+.header__label_cirkle {
+    margin-top: 6px;
+    margin-left: 31px;
+    width: 38px;
+    height: 38px;
+    border-radius: 20px;
+    background-color: #B0907A;
+    position: absolute;
+}
+.header__label_title {
+    width: 92.514px;
+    height: 22.342px;
+    position: relative;
+    margin-top: 13px;
+    margin-left: 4.25px;
+}
     .header__label_text {
         width: 64.784px;
         height: 5.986px;
@@ -86,8 +86,6 @@ html {
     .header__menu_line_contact{
         width: 85px;
     }
-    
-    
     
     .header__menu_text {
         color:  #403F3D;
@@ -166,7 +164,6 @@ html {
             display: block;
         }
         .header__nav_burger{
-            transition: 0.5s;
             display: flex;
             flex-direction: column;
             justify-content: start;
@@ -174,14 +171,18 @@ html {
             margin: 0px auto 0px auto;
             gap: 60px;
             background-color: #E1D4C9;        
-            position: absolute;
-            width: 100vw;
-            height: 100vh;
-            left: 100vw;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: 4;
+            opacity: 0;
+            transform: translateX(100%);
+            transition: all 0.5s ease-in-out;
         }
         .header__nav_burger-open{
-            left: 0vw;
-            z-index: 1;
+        opacity: 1;
+        transform: translateX(0%);
+        overflow: hidden;
         }
         .header__nav_item-burger{
             font-size: 32px;
@@ -193,16 +194,21 @@ html {
             height: 40px;
             justify-content: center;
             margin: 100px auto 0 auto;
-            position: absolute;
+            position: fixed;
             top: 520px;
-            left: 100vw;
-            width: 100vw;
-            transition: 0.5s;
+            background-color: #E1D4C9;    
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 4;
+        opacity: 0;
+        transform: translateX(100%);
+        transition: all 0.5s ease-in-out;
         }
         .header__menu_burger-open{
-            left: 0vw;
-            transition: 0.5s;
-            z-index: 1;
+            overflow: hidden;
+            opacity: 1;
+            transform: translateX(0%);
         }
         .header__menu_cup{
             display: none;
@@ -240,13 +246,16 @@ html {
         }
         .header__menu_line_menu-burger{
             width: 130px;
-            position: relative;
+            position: fixed;
             margin: 0 auto;
             top: 580px;
             left: 100vw;
         }
         .header__menu_line_menu-burger-open{
-            left: 1vw;
-            z-index: 1;
+            left: 0vw;
+            z-index: 4;
+        }
+        .noscroll{
+            overflow: hidden;
         }
     }

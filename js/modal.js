@@ -38,7 +38,8 @@ function openModal (unit,item) {
         if (item<8){document.getElementsByClassName('modal__item_img')[0].src = `./img/coffeeMenu/coffee-${item+1}.jpg`;}
         if (item>= 8&& item<12){document.getElementsByClassName('modal__item_img')[0].src = `./img/coffeeMenu/tea-${item-7}.jpg`;}
         if (item>= 12){document.getElementsByClassName('modal__item_img')[0].src = `./img/coffeeMenu/dessert-${item-11}.jpg`;}
-            
+        // по умолчанию выбирается минимальный объём
+        addChoise(document.getElementsByClassName('choise__size_item')[0])
         // выводим начальную цену
         purePrice = Number(products[item].price)
         document.getElementsByClassName('modal__price_value')[0].textContent = "$"+purePrice.toFixed(2);
@@ -90,6 +91,8 @@ function closeModal(){
     document.querySelector('.body').style = 'overflow: ;'
     document.querySelector('.modal').style = 'display: none;'
     document.querySelector('.fon-filter').classList.toggle('work-filter')
+    // при закрытии модального забываем все выбранные элементы
+    document.querySelectorAll('.chosen_item').forEach((unit)=>{cancelChoise2(unit)})
 }
 
 // функция снятия выбора с элемента выбранного ранее
