@@ -135,6 +135,12 @@
     .footer__container_first {
         width: 316px;
     }
+    .footer__container_first-favs-circle:hover {
+        background-color: #665F55 ;
+        .social{
+        stroke:#E1D4C9;
+        }   
+    }
     .footer__container_first-title {
         font-size: 32px;
         max-width: 316px;
@@ -183,4 +189,5 @@
         line-height: 150%; /* 24px */
         margin-top: 18px;
     }
+    
 }

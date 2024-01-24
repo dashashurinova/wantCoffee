@@ -59,6 +59,7 @@
     color: #E1D4C9;
     transition: 0.5s;
 }
+
 .app__content_button:hover .app__content_button-line2  {
     color: #E1D4C9;
     transition: 0.5s;
@@ -131,5 +132,10 @@
         max-width: 348px;
         margin: 40px auto 100px auto;
     }
-
+    .app__content_button:hover {
+        background-color:#E1D4C9;
+        .app__svg{
+            fill: #665F55;
+        }
+    }
 }

@@ -183,6 +183,7 @@ html {
         opacity: 1;
         transform: translateX(0%);
         overflow: hidden;
+        margin-left: -16px;
         }
         .header__nav_item-burger{
             font-size: 32px;
@@ -252,8 +253,9 @@ html {
             left: 100vw;
         }
         .header__menu_line_menu-burger-open{
-            left: 0vw;
-            z-index: 4;
+            /* left: 50vw;
+            z-index: 4; */
+            display: none;
         }
         .noscroll{
             overflow: hidden;

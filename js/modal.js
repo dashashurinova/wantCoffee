@@ -11,7 +11,7 @@ let addToPriseAmmount=0
 // слушаем на какую карточку нажмут мышью или пальцем
 productCards.forEach((unit,item)=>{
     unit.addEventListener('click', function(){openModal(unit,item)})
-    unit.addEventListener('touch', function(){openModal(unit,item)})
+    unit.addEventListener('touchstart', function(){openModal(unit,item)})
 })
 
 // функция открытия модального окна
